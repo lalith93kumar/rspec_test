@@ -2,7 +2,7 @@ require 'rspec/core'
 require 'httpclient'
 require 'byebug'
 require "json-schema"
-require_relative "client.rb"
+require_relative "../lib/client.rb"
 RSpec.describe "Api Test to comapare response data & artifacts" do
   before(:all) do
     @client = Client.new
@@ -14,8 +14,8 @@ RSpec.describe "Api Test to comapare response data & artifacts" do
       puts e.description + ": Failed\n"
     end
   end
-  file1 = File.new('file1.txt')
-  file2 = File.new('file2.txt') # It Dose't load the hole file into memory. It create a poniter to intial line of the file
+  file1 = File.new('testData/file1.txt')
+  file2 = File.new('testData/file2.txt') # It Dose't load the hole file into memory. It create a poniter to intial line of the file
   loop do
     begin
       file1_request = file1.readline.gsub("\n",'') # it loads reads single line from the file and moves the pointer to next line.
