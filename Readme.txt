@@ -9,7 +9,7 @@ Open the terminal & follow the below instruction
 	Bundle install
 
 Run :
-    rspec api_test_spec.rb
+    rspec spec/api_test_spec.rb
 
 TestData: 
 	Append api request in both the files like file1.txt & file2.txt
