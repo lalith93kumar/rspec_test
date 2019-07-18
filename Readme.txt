@@ -11,6 +11,10 @@ Open the terminal & follow the below instruction
 Run :
     rspec spec/api_test_spec.rb
 
+Allure Report:
+    allure generate reports/allure/
+    allure report open
+
 TestData: 
 	Append api request in both the files like file1.txt & file2.txt
 
