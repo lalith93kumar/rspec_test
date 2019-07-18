@@ -3,9 +3,11 @@ require 'httpclient'
 require 'byebug'
 require "json-schema"
 require_relative "../lib/client.rb"
+require_relative "../lib/utility.rb"
 RSpec.describe "Api Test to comapare response data & artifacts" do
   before(:all) do
-    @client = Client.new
+    @httpclient = Client.new
+    @utility_object = Utility.new
   end
   after(:each) do |e|
     if e.exception.nil?
@@ -24,12 +26,12 @@ RSpec.describe "Api Test to comapare response data & artifacts" do
       break
     end
     it "File 1 : #{file1_request} & File 2 : #{file2_request}"  do
-      response_file1 = @client.get(file1_request)
-      response_file2 = @client.get(file2_request)
-      res_body_1 = response_body_to_hash(response_file1)
-      res_body_2 = response_body_to_hash(response_file2)
+      response_file1 = @httpclient.get(file1_request)
+      response_file2 = @httpclient.get(file2_request)
+      res_body_1 = @utility_object.response_body_to_hash(response_file1)
+      res_body_2 = @utility_object.response_body_to_hash(response_file2)
       aggregate_failures "Body Respone Comparing" do
-        expect(deep_diff(res_body_1,res_body_2).keys).to match_array([]),"values that not common for both #{deep_diff(res_body_1,res_body_2)}"
+        expect(@utility_object.deep_diff(res_body_1,res_body_2).keys).to match_array([]),"values that not common for both #{@utility_object.deep_diff(res_body_1,res_body_2)}"
       end
       aggregate_failures "Respone Headers Comparing" do
         (response_file1.headers.keys+response_file2.headers.keys).reject{|x| ['CF-RAY','Age','CF-Cache-Status','Date','Expires'].include?(x)}.uniq.each do |x|
@@ -44,28 +46,5 @@ RSpec.describe "Api Test to comapare response data & artifacts" do
         expect(response_file1.ok?).to eq(response_file2.ok?)
       end
     end
-  end
-end
-
-def deep_diff(a, b)
-  (a.keys | b.keys).each_with_object({}) do |k, diff|
-    if a[k] != b[k]
-      if a[k].is_a?(Hash) && b[k].is_a?(Hash)
-        diff[k] = deep_diff(a[k], b[k])
-      else
-        diff[k] = [a[k], b[k]]
-      end
-    end
-    diff
-  end
-end
-
-def response_body_to_hash(res)
-  if res.content_type!=nil  && res.content_type.include?('application/json')
-    return JSON.parse(res.body)
-  elsif res.content_type!=nil  && res.content_type.include?('application/xml')
-    return Hash.from_xml(res.body)
-  else
-    return {}
   end
 end
