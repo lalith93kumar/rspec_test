@@ -1,0 +1,251 @@
+<?xml version="1.0"?>
+<ns2:test-suite xmlns="" xmlns:ns2="urn:model.allure.qatools.yandex.ru" start="1563452698573" stop="1563452703789">
+  <name>Api Test to comapare response data &amp; artifacts</name>
+  <title>Api Test to comapare response data &amp; artifacts</title>
+  <test-cases>
+    <test-case start="1563452698577" stop="1563452700498" status="broken">
+      <name>Api Test to comapare response data &amp; artifacts File 1 : https://reqres.in/api/users/3 &amp; File 2 : https://reqres.in/api/users/2</name>
+      <title>Api Test to comapare response data &amp; artifacts File 1 : https://reqres.in/api/users/3 &amp; File 2 : https://reqres.in/api/users/2</title>
+      <failure>
+        <message>uninitialized constant JSON::Parser
+Did you mean?  ParseError</message>
+        <stack-trace>/Users/Lalith/.rvm/gems/ruby-2.3.7@itildesk/gems/json-1.8.6/lib/json/common.rb:155:in `parse'&#xD;
+/Users/Lalith/Documents/Zoom/Ruby_Test/lib/utility.rb:21:in `response_body_to_hash'&#xD;
+/Users/Lalith/Documents/Zoom/Ruby_Test/spec/api_test_spec.rb:26:in `block (3 levels) in &lt;top (required)&gt;'&#xD;
+/Users/Lalith/.rvm/gems/ruby-2.3.7@itildesk/gems/rspec-core-3.7.1/lib/rspec/core/example.rb:254:in `instance_exec'&#xD;
+/Users/Lalith/.rvm/gems/ruby-2.3.7@itildesk/gems/rspec-core-3.7.1/lib/rspec/core/example.rb:254:in `block in run'&#xD;
+/Users/Lalith/.rvm/gems/ruby-2.3.7@itildesk/gems/rspec-core-3.7.1/lib/rspec/core/example.rb:500:in `block in with_around_and_singleton_context_hooks'&#xD;
+/Users/Lalith/.rvm/gems/ruby-2.3.7@itildesk/gems/rspec-core-3.7.1/lib/rspec/core/example.rb:457:in `block in with_around_example_hooks'&#xD;
+/Users/Lalith/.rvm/gems/ruby-2.3.7@itildesk/gems/rspec-core-3.7.1/lib/rspec/core/hooks.rb:466:in `block in run'&#xD;
+/Users/Lalith/.rvm/gems/ruby-2.3.7@itildesk/gems/rspec-core-3.7.1/lib/rspec/core/hooks.rb:604:in `run_around_example_hooks_for'&#xD;
+/Users/Lalith/.rvm/gems/ruby-2.3.7@itildesk/gems/rspec-core-3.7.1/lib/rspec/core/hooks.rb:466:in `run'&#xD;
+/Users/Lalith/.rvm/gems/ruby-2.3.7@itildesk/gems/allure-rspec-0.8.0/lib/allure-rspec/hooks.rb:33:in `run'&#xD;
+/Users/Lalith/.rvm/gems/ruby-2.3.7@itildesk/gems/rspec-core-3.7.1/lib/rspec/core/example.rb:457:in `with_around_example_hooks'&#xD;
+/Users/Lalith/.rvm/gems/ruby-2.3.7@itildesk/gems/rspec-core-3.7.1/lib/rspec/core/example.rb:500:in `with_around_and_singleton_context_hooks'&#xD;
+/Users/Lalith/.rvm/gems/ruby-2.3.7@itildesk/gems/rspec-core-3.7.1/lib/rspec/core/example.rb:251:in `run'&#xD;
+/Users/Lalith/.rvm/gems/ruby-2.3.7@itildesk/gems/rspec-core-3.7.1/lib/rspec/core/example_group.rb:628:in `block in run_examples'&#xD;
+/Users/Lalith/.rvm/gems/ruby-2.3.7@itildesk/gems/rspec-core-3.7.1/lib/rspec/core/example_group.rb:624:in `map'&#xD;
+/Users/Lalith/.rvm/gems/ruby-2.3.7@itildesk/gems/rspec-core-3.7.1/lib/rspec/core/example_group.rb:624:in `run_examples'&#xD;
+/Users/Lalith/.rvm/gems/ruby-2.3.7@itildesk/gems/rspec-core-3.7.1/lib/rspec/core/example_group.rb:590:in `run'&#xD;
+/Users/Lalith/.rvm/gems/ruby-2.3.7@itildesk/gems/rspec-core-3.7.1/lib/rspec/core/runner.rb:118:in `block (3 levels) in run_specs'&#xD;
+/Users/Lalith/.rvm/gems/ruby-2.3.7@itildesk/gems/rspec-core-3.7.1/lib/rspec/core/runner.rb:118:in `map'&#xD;
+/Users/Lalith/.rvm/gems/ruby-2.3.7@itildesk/gems/rspec-core-3.7.1/lib/rspec/core/runner.rb:118:in `block (2 levels) in run_specs'&#xD;
+/Users/Lalith/.rvm/gems/ruby-2.3.7@itildesk/gems/rspec-core-3.7.1/lib/rspec/core/configuration.rb:1926:in `with_suite_hooks'&#xD;
+/Users/Lalith/.rvm/gems/ruby-2.3.7@itildesk/gems/rspec-core-3.7.1/lib/rspec/core/runner.rb:113:in `block in run_specs'&#xD;
+/Users/Lalith/.rvm/gems/ruby-2.3.7@itildesk/gems/rspec-core-3.7.1/lib/rspec/core/reporter.rb:79:in `report'&#xD;
+/Users/Lalith/.rvm/gems/ruby-2.3.7@itildesk/gems/rspec-core-3.7.1/lib/rspec/core/runner.rb:112:in `run_specs'&#xD;
+/Users/Lalith/.rvm/gems/ruby-2.3.7@itildesk/gems/rspec-core-3.7.1/lib/rspec/core/runner.rb:87:in `run'&#xD;
+/Users/Lalith/.rvm/gems/ruby-2.3.7@itildesk/gems/rspec-core-3.7.1/lib/rspec/core/runner.rb:71:in `run'&#xD;
+/Users/Lalith/.rvm/gems/ruby-2.3.7@itildesk/gems/rspec-core-3.7.1/lib/rspec/core/runner.rb:45:in `invoke'&#xD;
+/Users/Lalith/.rvm/gems/ruby-2.3.7@itildesk/gems/rspec-core-3.7.1/exe/rspec:4:in `&lt;top (required)&gt;'&#xD;
+/Users/Lalith/.rvm/gems/ruby-2.3.7@itildesk/bin/rspec:23:in `load'&#xD;
+/Users/Lalith/.rvm/gems/ruby-2.3.7@itildesk/bin/rspec:23:in `&lt;main&gt;'&#xD;
+/Users/Lalith/.rvm/gems/ruby-2.3.7@itildesk/bin/ruby_executable_hooks:24:in `eval'&#xD;
+/Users/Lalith/.rvm/gems/ruby-2.3.7@itildesk/bin/ruby_executable_hooks:24:in `&lt;main&gt;'</stack-trace>
+      </failure>
+      <steps/>
+      <attachments/>
+      <labels>
+        <label name="thread" value="70170370652460"/>
+        <label name="host" value="FDLMC1420.local"/>
+      </labels>
+      <parameters/>
+    </test-case>
+    <test-case start="1563452700502" stop="1563452701932" status="broken">
+      <name>Api Test to comapare response data &amp; artifacts File 1 : https://reqres.in/api/users/1 &amp; File 2 : https://reqres.in/api/users?page=3</name>
+      <title>Api Test to comapare response data &amp; artifacts File 1 : https://reqres.in/api/users/1 &amp; File 2 : https://reqres.in/api/users?page=3</title>
+      <failure>
+        <message>uninitialized constant JSON::Parser
+Did you mean?  ParseError</message>
+        <stack-trace>/Users/Lalith/.rvm/gems/ruby-2.3.7@itildesk/gems/json-1.8.6/lib/json/common.rb:155:in `parse'&#xD;
+/Users/Lalith/Documents/Zoom/Ruby_Test/lib/utility.rb:21:in `response_body_to_hash'&#xD;
+/Users/Lalith/Documents/Zoom/Ruby_Test/spec/api_test_spec.rb:26:in `block (3 levels) in &lt;top (required)&gt;'&#xD;
+/Users/Lalith/.rvm/gems/ruby-2.3.7@itildesk/gems/rspec-core-3.7.1/lib/rspec/core/example.rb:254:in `instance_exec'&#xD;
+/Users/Lalith/.rvm/gems/ruby-2.3.7@itildesk/gems/rspec-core-3.7.1/lib/rspec/core/example.rb:254:in `block in run'&#xD;
+/Users/Lalith/.rvm/gems/ruby-2.3.7@itildesk/gems/rspec-core-3.7.1/lib/rspec/core/example.rb:500:in `block in with_around_and_singleton_context_hooks'&#xD;
+/Users/Lalith/.rvm/gems/ruby-2.3.7@itildesk/gems/rspec-core-3.7.1/lib/rspec/core/example.rb:457:in `block in with_around_example_hooks'&#xD;
+/Users/Lalith/.rvm/gems/ruby-2.3.7@itildesk/gems/rspec-core-3.7.1/lib/rspec/core/hooks.rb:466:in `block in run'&#xD;
+/Users/Lalith/.rvm/gems/ruby-2.3.7@itildesk/gems/rspec-core-3.7.1/lib/rspec/core/hooks.rb:604:in `run_around_example_hooks_for'&#xD;
+/Users/Lalith/.rvm/gems/ruby-2.3.7@itildesk/gems/rspec-core-3.7.1/lib/rspec/core/hooks.rb:466:in `run'&#xD;
+/Users/Lalith/.rvm/gems/ruby-2.3.7@itildesk/gems/allure-rspec-0.8.0/lib/allure-rspec/hooks.rb:33:in `run'&#xD;
+/Users/Lalith/.rvm/gems/ruby-2.3.7@itildesk/gems/rspec-core-3.7.1/lib/rspec/core/example.rb:457:in `with_around_example_hooks'&#xD;
+/Users/Lalith/.rvm/gems/ruby-2.3.7@itildesk/gems/rspec-core-3.7.1/lib/rspec/core/example.rb:500:in `with_around_and_singleton_context_hooks'&#xD;
+/Users/Lalith/.rvm/gems/ruby-2.3.7@itildesk/gems/rspec-core-3.7.1/lib/rspec/core/example.rb:251:in `run'&#xD;
+/Users/Lalith/.rvm/gems/ruby-2.3.7@itildesk/gems/rspec-core-3.7.1/lib/rspec/core/example_group.rb:628:in `block in run_examples'&#xD;
+/Users/Lalith/.rvm/gems/ruby-2.3.7@itildesk/gems/rspec-core-3.7.1/lib/rspec/core/example_group.rb:624:in `map'&#xD;
+/Users/Lalith/.rvm/gems/ruby-2.3.7@itildesk/gems/rspec-core-3.7.1/lib/rspec/core/example_group.rb:624:in `run_examples'&#xD;
+/Users/Lalith/.rvm/gems/ruby-2.3.7@itildesk/gems/rspec-core-3.7.1/lib/rspec/core/example_group.rb:590:in `run'&#xD;
+/Users/Lalith/.rvm/gems/ruby-2.3.7@itildesk/gems/rspec-core-3.7.1/lib/rspec/core/runner.rb:118:in `block (3 levels) in run_specs'&#xD;
+/Users/Lalith/.rvm/gems/ruby-2.3.7@itildesk/gems/rspec-core-3.7.1/lib/rspec/core/runner.rb:118:in `map'&#xD;
+/Users/Lalith/.rvm/gems/ruby-2.3.7@itildesk/gems/rspec-core-3.7.1/lib/rspec/core/runner.rb:118:in `block (2 levels) in run_specs'&#xD;
+/Users/Lalith/.rvm/gems/ruby-2.3.7@itildesk/gems/rspec-core-3.7.1/lib/rspec/core/configuration.rb:1926:in `with_suite_hooks'&#xD;
+/Users/Lalith/.rvm/gems/ruby-2.3.7@itildesk/gems/rspec-core-3.7.1/lib/rspec/core/runner.rb:113:in `block in run_specs'&#xD;
+/Users/Lalith/.rvm/gems/ruby-2.3.7@itildesk/gems/rspec-core-3.7.1/lib/rspec/core/reporter.rb:79:in `report'&#xD;
+/Users/Lalith/.rvm/gems/ruby-2.3.7@itildesk/gems/rspec-core-3.7.1/lib/rspec/core/runner.rb:112:in `run_specs'&#xD;
+/Users/Lalith/.rvm/gems/ruby-2.3.7@itildesk/gems/rspec-core-3.7.1/lib/rspec/core/runner.rb:87:in `run'&#xD;
+/Users/Lalith/.rvm/gems/ruby-2.3.7@itildesk/gems/rspec-core-3.7.1/lib/rspec/core/runner.rb:71:in `run'&#xD;
+/Users/Lalith/.rvm/gems/ruby-2.3.7@itildesk/gems/rspec-core-3.7.1/lib/rspec/core/runner.rb:45:in `invoke'&#xD;
+/Users/Lalith/.rvm/gems/ruby-2.3.7@itildesk/gems/rspec-core-3.7.1/exe/rspec:4:in `&lt;top (required)&gt;'&#xD;
+/Users/Lalith/.rvm/gems/ruby-2.3.7@itildesk/bin/rspec:23:in `load'&#xD;
+/Users/Lalith/.rvm/gems/ruby-2.3.7@itildesk/bin/rspec:23:in `&lt;main&gt;'&#xD;
+/Users/Lalith/.rvm/gems/ruby-2.3.7@itildesk/bin/ruby_executable_hooks:24:in `eval'&#xD;
+/Users/Lalith/.rvm/gems/ruby-2.3.7@itildesk/bin/ruby_executable_hooks:24:in `&lt;main&gt;'</stack-trace>
+      </failure>
+      <steps/>
+      <attachments/>
+      <labels>
+        <label name="thread" value="70170370652460"/>
+        <label name="host" value="FDLMC1420.local"/>
+      </labels>
+      <parameters/>
+    </test-case>
+    <test-case start="1563452701934" stop="1563452702175" status="broken">
+      <name>Api Test to comapare response data &amp; artifacts File 1 : https://reqres.in/api/users/2 &amp; File 2 : https://reqres.in/api/users/2</name>
+      <title>Api Test to comapare response data &amp; artifacts File 1 : https://reqres.in/api/users/2 &amp; File 2 : https://reqres.in/api/users/2</title>
+      <failure>
+        <message>uninitialized constant JSON::Parser
+Did you mean?  ParseError</message>
+        <stack-trace>/Users/Lalith/.rvm/gems/ruby-2.3.7@itildesk/gems/json-1.8.6/lib/json/common.rb:155:in `parse'&#xD;
+/Users/Lalith/Documents/Zoom/Ruby_Test/lib/utility.rb:21:in `response_body_to_hash'&#xD;
+/Users/Lalith/Documents/Zoom/Ruby_Test/spec/api_test_spec.rb:26:in `block (3 levels) in &lt;top (required)&gt;'&#xD;
+/Users/Lalith/.rvm/gems/ruby-2.3.7@itildesk/gems/rspec-core-3.7.1/lib/rspec/core/example.rb:254:in `instance_exec'&#xD;
+/Users/Lalith/.rvm/gems/ruby-2.3.7@itildesk/gems/rspec-core-3.7.1/lib/rspec/core/example.rb:254:in `block in run'&#xD;
+/Users/Lalith/.rvm/gems/ruby-2.3.7@itildesk/gems/rspec-core-3.7.1/lib/rspec/core/example.rb:500:in `block in with_around_and_singleton_context_hooks'&#xD;
+/Users/Lalith/.rvm/gems/ruby-2.3.7@itildesk/gems/rspec-core-3.7.1/lib/rspec/core/example.rb:457:in `block in with_around_example_hooks'&#xD;
+/Users/Lalith/.rvm/gems/ruby-2.3.7@itildesk/gems/rspec-core-3.7.1/lib/rspec/core/hooks.rb:466:in `block in run'&#xD;
+/Users/Lalith/.rvm/gems/ruby-2.3.7@itildesk/gems/rspec-core-3.7.1/lib/rspec/core/hooks.rb:604:in `run_around_example_hooks_for'&#xD;
+/Users/Lalith/.rvm/gems/ruby-2.3.7@itildesk/gems/rspec-core-3.7.1/lib/rspec/core/hooks.rb:466:in `run'&#xD;
+/Users/Lalith/.rvm/gems/ruby-2.3.7@itildesk/gems/allure-rspec-0.8.0/lib/allure-rspec/hooks.rb:33:in `run'&#xD;
+/Users/Lalith/.rvm/gems/ruby-2.3.7@itildesk/gems/rspec-core-3.7.1/lib/rspec/core/example.rb:457:in `with_around_example_hooks'&#xD;
+/Users/Lalith/.rvm/gems/ruby-2.3.7@itildesk/gems/rspec-core-3.7.1/lib/rspec/core/example.rb:500:in `with_around_and_singleton_context_hooks'&#xD;
+/Users/Lalith/.rvm/gems/ruby-2.3.7@itildesk/gems/rspec-core-3.7.1/lib/rspec/core/example.rb:251:in `run'&#xD;
+/Users/Lalith/.rvm/gems/ruby-2.3.7@itildesk/gems/rspec-core-3.7.1/lib/rspec/core/example_group.rb:628:in `block in run_examples'&#xD;
+/Users/Lalith/.rvm/gems/ruby-2.3.7@itildesk/gems/rspec-core-3.7.1/lib/rspec/core/example_group.rb:624:in `map'&#xD;
+/Users/Lalith/.rvm/gems/ruby-2.3.7@itildesk/gems/rspec-core-3.7.1/lib/rspec/core/example_group.rb:624:in `run_examples'&#xD;
+/Users/Lalith/.rvm/gems/ruby-2.3.7@itildesk/gems/rspec-core-3.7.1/lib/rspec/core/example_group.rb:590:in `run'&#xD;
+/Users/Lalith/.rvm/gems/ruby-2.3.7@itildesk/gems/rspec-core-3.7.1/lib/rspec/core/runner.rb:118:in `block (3 levels) in run_specs'&#xD;
+/Users/Lalith/.rvm/gems/ruby-2.3.7@itildesk/gems/rspec-core-3.7.1/lib/rspec/core/runner.rb:118:in `map'&#xD;
+/Users/Lalith/.rvm/gems/ruby-2.3.7@itildesk/gems/rspec-core-3.7.1/lib/rspec/core/runner.rb:118:in `block (2 levels) in run_specs'&#xD;
+/Users/Lalith/.rvm/gems/ruby-2.3.7@itildesk/gems/rspec-core-3.7.1/lib/rspec/core/configuration.rb:1926:in `with_suite_hooks'&#xD;
+/Users/Lalith/.rvm/gems/ruby-2.3.7@itildesk/gems/rspec-core-3.7.1/lib/rspec/core/runner.rb:113:in `block in run_specs'&#xD;
+/Users/Lalith/.rvm/gems/ruby-2.3.7@itildesk/gems/rspec-core-3.7.1/lib/rspec/core/reporter.rb:79:in `report'&#xD;
+/Users/Lalith/.rvm/gems/ruby-2.3.7@itildesk/gems/rspec-core-3.7.1/lib/rspec/core/runner.rb:112:in `run_specs'&#xD;
+/Users/Lalith/.rvm/gems/ruby-2.3.7@itildesk/gems/rspec-core-3.7.1/lib/rspec/core/runner.rb:87:in `run'&#xD;
+/Users/Lalith/.rvm/gems/ruby-2.3.7@itildesk/gems/rspec-core-3.7.1/lib/rspec/core/runner.rb:71:in `run'&#xD;
+/Users/Lalith/.rvm/gems/ruby-2.3.7@itildesk/gems/rspec-core-3.7.1/lib/rspec/core/runner.rb:45:in `invoke'&#xD;
+/Users/Lalith/.rvm/gems/ruby-2.3.7@itildesk/gems/rspec-core-3.7.1/exe/rspec:4:in `&lt;top (required)&gt;'&#xD;
+/Users/Lalith/.rvm/gems/ruby-2.3.7@itildesk/bin/rspec:23:in `load'&#xD;
+/Users/Lalith/.rvm/gems/ruby-2.3.7@itildesk/bin/rspec:23:in `&lt;main&gt;'&#xD;
+/Users/Lalith/.rvm/gems/ruby-2.3.7@itildesk/bin/ruby_executable_hooks:24:in `eval'&#xD;
+/Users/Lalith/.rvm/gems/ruby-2.3.7@itildesk/bin/ruby_executable_hooks:24:in `&lt;main&gt;'</stack-trace>
+      </failure>
+      <steps/>
+      <attachments/>
+      <labels>
+        <label name="thread" value="70170370652460"/>
+        <label name="host" value="FDLMC1420.local"/>
+      </labels>
+      <parameters/>
+    </test-case>
+    <test-case start="1563452702177" stop="1563452702974" status="broken">
+      <name>Api Test to comapare response data &amp; artifacts File 1 : https://reqres.in/api/users?page=2 &amp; File 2 : https://reqres.in/api/users?page=2</name>
+      <title>Api Test to comapare response data &amp; artifacts File 1 : https://reqres.in/api/users?page=2 &amp; File 2 : https://reqres.in/api/users?page=2</title>
+      <failure>
+        <message>uninitialized constant JSON::Parser
+Did you mean?  ParseError</message>
+        <stack-trace>/Users/Lalith/.rvm/gems/ruby-2.3.7@itildesk/gems/json-1.8.6/lib/json/common.rb:155:in `parse'&#xD;
+/Users/Lalith/Documents/Zoom/Ruby_Test/lib/utility.rb:21:in `response_body_to_hash'&#xD;
+/Users/Lalith/Documents/Zoom/Ruby_Test/spec/api_test_spec.rb:26:in `block (3 levels) in &lt;top (required)&gt;'&#xD;
+/Users/Lalith/.rvm/gems/ruby-2.3.7@itildesk/gems/rspec-core-3.7.1/lib/rspec/core/example.rb:254:in `instance_exec'&#xD;
+/Users/Lalith/.rvm/gems/ruby-2.3.7@itildesk/gems/rspec-core-3.7.1/lib/rspec/core/example.rb:254:in `block in run'&#xD;
+/Users/Lalith/.rvm/gems/ruby-2.3.7@itildesk/gems/rspec-core-3.7.1/lib/rspec/core/example.rb:500:in `block in with_around_and_singleton_context_hooks'&#xD;
+/Users/Lalith/.rvm/gems/ruby-2.3.7@itildesk/gems/rspec-core-3.7.1/lib/rspec/core/example.rb:457:in `block in with_around_example_hooks'&#xD;
+/Users/Lalith/.rvm/gems/ruby-2.3.7@itildesk/gems/rspec-core-3.7.1/lib/rspec/core/hooks.rb:466:in `block in run'&#xD;
+/Users/Lalith/.rvm/gems/ruby-2.3.7@itildesk/gems/rspec-core-3.7.1/lib/rspec/core/hooks.rb:604:in `run_around_example_hooks_for'&#xD;
+/Users/Lalith/.rvm/gems/ruby-2.3.7@itildesk/gems/rspec-core-3.7.1/lib/rspec/core/hooks.rb:466:in `run'&#xD;
+/Users/Lalith/.rvm/gems/ruby-2.3.7@itildesk/gems/allure-rspec-0.8.0/lib/allure-rspec/hooks.rb:33:in `run'&#xD;
+/Users/Lalith/.rvm/gems/ruby-2.3.7@itildesk/gems/rspec-core-3.7.1/lib/rspec/core/example.rb:457:in `with_around_example_hooks'&#xD;
+/Users/Lalith/.rvm/gems/ruby-2.3.7@itildesk/gems/rspec-core-3.7.1/lib/rspec/core/example.rb:500:in `with_around_and_singleton_context_hooks'&#xD;
+/Users/Lalith/.rvm/gems/ruby-2.3.7@itildesk/gems/rspec-core-3.7.1/lib/rspec/core/example.rb:251:in `run'&#xD;
+/Users/Lalith/.rvm/gems/ruby-2.3.7@itildesk/gems/rspec-core-3.7.1/lib/rspec/core/example_group.rb:628:in `block in run_examples'&#xD;
+/Users/Lalith/.rvm/gems/ruby-2.3.7@itildesk/gems/rspec-core-3.7.1/lib/rspec/core/example_group.rb:624:in `map'&#xD;
+/Users/Lalith/.rvm/gems/ruby-2.3.7@itildesk/gems/rspec-core-3.7.1/lib/rspec/core/example_group.rb:624:in `run_examples'&#xD;
+/Users/Lalith/.rvm/gems/ruby-2.3.7@itildesk/gems/rspec-core-3.7.1/lib/rspec/core/example_group.rb:590:in `run'&#xD;
+/Users/Lalith/.rvm/gems/ruby-2.3.7@itildesk/gems/rspec-core-3.7.1/lib/rspec/core/runner.rb:118:in `block (3 levels) in run_specs'&#xD;
+/Users/Lalith/.rvm/gems/ruby-2.3.7@itildesk/gems/rspec-core-3.7.1/lib/rspec/core/runner.rb:118:in `map'&#xD;
+/Users/Lalith/.rvm/gems/ruby-2.3.7@itildesk/gems/rspec-core-3.7.1/lib/rspec/core/runner.rb:118:in `block (2 levels) in run_specs'&#xD;
+/Users/Lalith/.rvm/gems/ruby-2.3.7@itildesk/gems/rspec-core-3.7.1/lib/rspec/core/configuration.rb:1926:in `with_suite_hooks'&#xD;
+/Users/Lalith/.rvm/gems/ruby-2.3.7@itildesk/gems/rspec-core-3.7.1/lib/rspec/core/runner.rb:113:in `block in run_specs'&#xD;
+/Users/Lalith/.rvm/gems/ruby-2.3.7@itildesk/gems/rspec-core-3.7.1/lib/rspec/core/reporter.rb:79:in `report'&#xD;
+/Users/Lalith/.rvm/gems/ruby-2.3.7@itildesk/gems/rspec-core-3.7.1/lib/rspec/core/runner.rb:112:in `run_specs'&#xD;
+/Users/Lalith/.rvm/gems/ruby-2.3.7@itildesk/gems/rspec-core-3.7.1/lib/rspec/core/runner.rb:87:in `run'&#xD;
+/Users/Lalith/.rvm/gems/ruby-2.3.7@itildesk/gems/rspec-core-3.7.1/lib/rspec/core/runner.rb:71:in `run'&#xD;
+/Users/Lalith/.rvm/gems/ruby-2.3.7@itildesk/gems/rspec-core-3.7.1/lib/rspec/core/runner.rb:45:in `invoke'&#xD;
+/Users/Lalith/.rvm/gems/ruby-2.3.7@itildesk/gems/rspec-core-3.7.1/exe/rspec:4:in `&lt;top (required)&gt;'&#xD;
+/Users/Lalith/.rvm/gems/ruby-2.3.7@itildesk/bin/rspec:23:in `load'&#xD;
+/Users/Lalith/.rvm/gems/ruby-2.3.7@itildesk/bin/rspec:23:in `&lt;main&gt;'&#xD;
+/Users/Lalith/.rvm/gems/ruby-2.3.7@itildesk/bin/ruby_executable_hooks:24:in `eval'&#xD;
+/Users/Lalith/.rvm/gems/ruby-2.3.7@itildesk/bin/ruby_executable_hooks:24:in `&lt;main&gt;'</stack-trace>
+      </failure>
+      <steps/>
+      <attachments/>
+      <labels>
+        <label name="thread" value="70170370652460"/>
+        <label name="host" value="FDLMC1420.local"/>
+      </labels>
+      <parameters/>
+    </test-case>
+    <test-case start="1563452702976" stop="1563452703787" status="broken">
+      <name>Api Test to comapare response data &amp; artifacts File 1 : https://reqres.in/api/users?page=1 &amp; File 2 : https://reqres.in/api/users?page=1</name>
+      <title>Api Test to comapare response data &amp; artifacts File 1 : https://reqres.in/api/users?page=1 &amp; File 2 : https://reqres.in/api/users?page=1</title>
+      <failure>
+        <message>uninitialized constant JSON::Parser
+Did you mean?  ParseError</message>
+        <stack-trace>/Users/Lalith/.rvm/gems/ruby-2.3.7@itildesk/gems/json-1.8.6/lib/json/common.rb:155:in `parse'&#xD;
+/Users/Lalith/Documents/Zoom/Ruby_Test/lib/utility.rb:21:in `response_body_to_hash'&#xD;
+/Users/Lalith/Documents/Zoom/Ruby_Test/spec/api_test_spec.rb:26:in `block (3 levels) in &lt;top (required)&gt;'&#xD;
+/Users/Lalith/.rvm/gems/ruby-2.3.7@itildesk/gems/rspec-core-3.7.1/lib/rspec/core/example.rb:254:in `instance_exec'&#xD;
+/Users/Lalith/.rvm/gems/ruby-2.3.7@itildesk/gems/rspec-core-3.7.1/lib/rspec/core/example.rb:254:in `block in run'&#xD;
+/Users/Lalith/.rvm/gems/ruby-2.3.7@itildesk/gems/rspec-core-3.7.1/lib/rspec/core/example.rb:500:in `block in with_around_and_singleton_context_hooks'&#xD;
+/Users/Lalith/.rvm/gems/ruby-2.3.7@itildesk/gems/rspec-core-3.7.1/lib/rspec/core/example.rb:457:in `block in with_around_example_hooks'&#xD;
+/Users/Lalith/.rvm/gems/ruby-2.3.7@itildesk/gems/rspec-core-3.7.1/lib/rspec/core/hooks.rb:466:in `block in run'&#xD;
+/Users/Lalith/.rvm/gems/ruby-2.3.7@itildesk/gems/rspec-core-3.7.1/lib/rspec/core/hooks.rb:604:in `run_around_example_hooks_for'&#xD;
+/Users/Lalith/.rvm/gems/ruby-2.3.7@itildesk/gems/rspec-core-3.7.1/lib/rspec/core/hooks.rb:466:in `run'&#xD;
+/Users/Lalith/.rvm/gems/ruby-2.3.7@itildesk/gems/allure-rspec-0.8.0/lib/allure-rspec/hooks.rb:33:in `run'&#xD;
+/Users/Lalith/.rvm/gems/ruby-2.3.7@itildesk/gems/rspec-core-3.7.1/lib/rspec/core/example.rb:457:in `with_around_example_hooks'&#xD;
+/Users/Lalith/.rvm/gems/ruby-2.3.7@itildesk/gems/rspec-core-3.7.1/lib/rspec/core/example.rb:500:in `with_around_and_singleton_context_hooks'&#xD;
+/Users/Lalith/.rvm/gems/ruby-2.3.7@itildesk/gems/rspec-core-3.7.1/lib/rspec/core/example.rb:251:in `run'&#xD;
+/Users/Lalith/.rvm/gems/ruby-2.3.7@itildesk/gems/rspec-core-3.7.1/lib/rspec/core/example_group.rb:628:in `block in run_examples'&#xD;
+/Users/Lalith/.rvm/gems/ruby-2.3.7@itildesk/gems/rspec-core-3.7.1/lib/rspec/core/example_group.rb:624:in `map'&#xD;
+/Users/Lalith/.rvm/gems/ruby-2.3.7@itildesk/gems/rspec-core-3.7.1/lib/rspec/core/example_group.rb:624:in `run_examples'&#xD;
+/Users/Lalith/.rvm/gems/ruby-2.3.7@itildesk/gems/rspec-core-3.7.1/lib/rspec/core/example_group.rb:590:in `run'&#xD;
+/Users/Lalith/.rvm/gems/ruby-2.3.7@itildesk/gems/rspec-core-3.7.1/lib/rspec/core/runner.rb:118:in `block (3 levels) in run_specs'&#xD;
+/Users/Lalith/.rvm/gems/ruby-2.3.7@itildesk/gems/rspec-core-3.7.1/lib/rspec/core/runner.rb:118:in `map'&#xD;
+/Users/Lalith/.rvm/gems/ruby-2.3.7@itildesk/gems/rspec-core-3.7.1/lib/rspec/core/runner.rb:118:in `block (2 levels) in run_specs'&#xD;
+/Users/Lalith/.rvm/gems/ruby-2.3.7@itildesk/gems/rspec-core-3.7.1/lib/rspec/core/configuration.rb:1926:in `with_suite_hooks'&#xD;
+/Users/Lalith/.rvm/gems/ruby-2.3.7@itildesk/gems/rspec-core-3.7.1/lib/rspec/core/runner.rb:113:in `block in run_specs'&#xD;
+/Users/Lalith/.rvm/gems/ruby-2.3.7@itildesk/gems/rspec-core-3.7.1/lib/rspec/core/reporter.rb:79:in `report'&#xD;
+/Users/Lalith/.rvm/gems/ruby-2.3.7@itildesk/gems/rspec-core-3.7.1/lib/rspec/core/runner.rb:112:in `run_specs'&#xD;
+/Users/Lalith/.rvm/gems/ruby-2.3.7@itildesk/gems/rspec-core-3.7.1/lib/rspec/core/runner.rb:87:in `run'&#xD;
+/Users/Lalith/.rvm/gems/ruby-2.3.7@itildesk/gems/rspec-core-3.7.1/lib/rspec/core/runner.rb:71:in `run'&#xD;
+/Users/Lalith/.rvm/gems/ruby-2.3.7@itildesk/gems/rspec-core-3.7.1/lib/rspec/core/runner.rb:45:in `invoke'&#xD;
+/Users/Lalith/.rvm/gems/ruby-2.3.7@itildesk/gems/rspec-core-3.7.1/exe/rspec:4:in `&lt;top (required)&gt;'&#xD;
+/Users/Lalith/.rvm/gems/ruby-2.3.7@itildesk/bin/rspec:23:in `load'&#xD;
+/Users/Lalith/.rvm/gems/ruby-2.3.7@itildesk/bin/rspec:23:in `&lt;main&gt;'&#xD;
+/Users/Lalith/.rvm/gems/ruby-2.3.7@itildesk/bin/ruby_executable_hooks:24:in `eval'&#xD;
+/Users/Lalith/.rvm/gems/ruby-2.3.7@itildesk/bin/ruby_executable_hooks:24:in `&lt;main&gt;'</stack-trace>
+      </failure>
+      <steps/>
+      <attachments/>
+      <labels>
+        <label name="thread" value="70170370652460"/>
+        <label name="host" value="FDLMC1420.local"/>
+      </labels>
+      <parameters/>
+    </test-case>
+  </test-cases>
+  <labels>
+    <label name="thread" value="70170370652460"/>
+    <label name="host" value="FDLMC1420.local"/>
+  </labels>
+</ns2:test-suite>

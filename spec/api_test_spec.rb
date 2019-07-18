@@ -1,9 +1,4 @@
-require 'rspec/core'
-require 'httpclient'
-require 'byebug'
-require "json-schema"
-require_relative "../lib/client.rb"
-require_relative "../lib/utility.rb"
+require 'spec_helper.rb'
 RSpec.describe "Api Test to comapare response data & artifacts" do
   before(:all) do
     @httpclient = Client.new
